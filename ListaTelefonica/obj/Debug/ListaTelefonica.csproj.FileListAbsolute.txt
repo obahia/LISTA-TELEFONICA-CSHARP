@@ -1,0 +1,10 @@
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\bin\Debug\ListaTelefonica.exe.config
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\bin\Debug\ListaTelefonica.exe
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\bin\Debug\ListaTelefonica.pdb
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.AssemblyReference.cache
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.Form1.resources
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.Properties.Resources.resources
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.GenerateResource.cache
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.CoreCompileInputs.cache
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.exe
+C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.pdb
