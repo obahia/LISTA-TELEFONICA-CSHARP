@@ -8,3 +8,13 @@ C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debu
 C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.CoreCompileInputs.cache
 C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.exe
 C:\Users\53024\Documents\GitHub\LISTA-TELEFONICA-CSHARP\ListaTelefonica\obj\Debug\ListaTelefonica.pdb
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\bin\Debug\ListaTelefonica.exe.config
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\bin\Debug\ListaTelefonica.exe
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\bin\Debug\ListaTelefonica.pdb
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.AssemblyReference.cache
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.Form1.resources
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.Properties.Resources.resources
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.GenerateResource.cache
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.csproj.CoreCompileInputs.cache
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.exe
+C:\Users\joaov\OneDrive\Documentos\REPOSITORIOS\ListaTelefonica\obj\Debug\ListaTelefonica.pdb

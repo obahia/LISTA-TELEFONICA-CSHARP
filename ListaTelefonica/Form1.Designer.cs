@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.lista_info = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
@@ -44,23 +43,21 @@
             this.btn_Atualizar = new System.Windows.Forms.Button();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.btn_Novo = new System.Windows.Forms.Button();
+            this.grelhaInfo = new System.Windows.Forms.DataGridView();
+            this.RowNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RowTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RowEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RowEndereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.grelhaInfo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lista_info
-            // 
-            this.lista_info.FormattingEnabled = true;
-            this.lista_info.Location = new System.Drawing.Point(12, 267);
-            this.lista_info.Name = "lista_info";
-            this.lista_info.Size = new System.Drawing.Size(501, 212);
-            this.lista_info.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(147, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(280, 32);
+            this.label1.Size = new System.Drawing.Size(221, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Lista Telefónica";
             // 
@@ -88,10 +85,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(22, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 22);
+            this.label2.Size = new System.Drawing.Size(85, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "Telefone";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -99,10 +96,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 68);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 22);
+            this.label3.Size = new System.Drawing.Size(62, 24);
             this.label3.TabIndex = 7;
             this.label3.Text = "Nome";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,10 +107,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(22, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 22);
+            this.label4.Size = new System.Drawing.Size(57, 24);
             this.label4.TabIndex = 8;
             this.label4.Text = "Email";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,10 +118,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calisto MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(22, 186);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 22);
+            this.label5.Size = new System.Drawing.Size(94, 24);
             this.label5.TabIndex = 10;
             this.label5.Text = "Endereço";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,11 +190,45 @@
             this.btn_Novo.UseVisualStyleBackColor = true;
             this.btn_Novo.Click += new System.EventHandler(this.btn_Novo_Click);
             // 
+            // grelhaInfo
+            // 
+            this.grelhaInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grelhaInfo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RowNome,
+            this.RowTelefone,
+            this.RowEmail,
+            this.RowEndereco});
+            this.grelhaInfo.Location = new System.Drawing.Point(26, 252);
+            this.grelhaInfo.Name = "grelhaInfo";
+            this.grelhaInfo.Size = new System.Drawing.Size(471, 227);
+            this.grelhaInfo.TabIndex = 16;
+            // 
+            // RowNome
+            // 
+            this.RowNome.HeaderText = "Nome";
+            this.RowNome.Name = "RowNome";
+            // 
+            // RowTelefone
+            // 
+            this.RowTelefone.HeaderText = "Telefone";
+            this.RowTelefone.Name = "RowTelefone";
+            // 
+            // RowEmail
+            // 
+            this.RowEmail.HeaderText = "Email";
+            this.RowEmail.Name = "RowEmail";
+            // 
+            // RowEndereco
+            // 
+            this.RowEndereco.HeaderText = "Endereço";
+            this.RowEndereco.Name = "RowEndereco";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(625, 491);
+            this.Controls.Add(this.grelhaInfo);
             this.Controls.Add(this.btn_Sair);
             this.Controls.Add(this.btn_Deletar);
             this.Controls.Add(this.btn_Atualizar);
@@ -212,18 +243,17 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lista_info);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Lista Telefónica";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grelhaInfo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListBox lista_info;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtTelefone;
@@ -238,6 +268,11 @@
         private System.Windows.Forms.Button btn_Atualizar;
         private System.Windows.Forms.Button btn_Deletar;
         private System.Windows.Forms.Button btn_Sair;
+        private System.Windows.Forms.DataGridView grelhaInfo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RowNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RowTelefone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RowEmail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RowEndereco;
     }
 }
 

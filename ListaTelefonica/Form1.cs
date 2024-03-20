@@ -32,6 +32,17 @@ namespace ListaTelefonica
             }
         }
 
+
+        private void ConfigurarDatatGridView()
+        {
+           
+
+            // Define o modo de seleção para selecionar uma linha por vez
+            grelhaInfo.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+            // Esconde a última linha em branco do DataGridView
+            grelhaInfo.AllowUserToAddRows = false;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -39,55 +50,48 @@ namespace ListaTelefonica
 
         private void btn_Novo_Click(object sender, EventArgs e)
         {
-            //Verifica se o número inserido é válido
-            if(!int.TryParse(txtTelefone.Text, out int
-                telefone))
+            // Verifica se o número inserido é válido
+            if (!int.TryParse(txtTelefone.Text, out int telefone))
             {
                 MessageBox.Show("Por favor, insira um número de telefone válido.", "Número Inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            Contato newcontato = new Contato()
+
+            // Cria um novo objeto Contato e adiciona à lista de contatos
+            Contato newContato = new Contato()
             {
-                Nome     = txtNome.Text,
-                Email    = txtEmail.Text,
-                Morada   = txtMorada.Text,
+                Nome = txtNome.Text,
+                Email = txtEmail.Text,
+                Morada = txtMorada.Text,
                 Telefone = txtTelefone.Text
             };
-            
-            listaContatos.Add(newcontato);
-            //adiciona entao na listbox
-            AtualizarList();
+            listaContatos.Add(newContato);
 
+            // Atualiza o DataGridView com os dados atualizados
+            AtualizarDataGridView();
+
+            // Limpa os campos de entrada
             LimparTextBox();
         }
-
-        public void AtualizarList()
+        private void AtualizarDataGridView()
         {
-            lista_info.Items.Clear();
+            // Limpa as linhas existentes no DataGridView
+            grelhaInfo.Rows.Clear();
 
-            // Adicionar rótulos de coluna acima da ListBox
-            string header = string.Format("{0,-20} | {1,-15} | {2,-30} | {3,-50}",
-                                           "Nome", "Telefone", "Email", "Morada");
-            lista_info.Items.Add(header);
-
-            // Adicionar separador de colunas
-            string separator = new string('-', header.Length);
-            lista_info.Items.Add(separator);
-
-            // Adicionar cada contato formatado como uma linha da tabela na ListBox
+            // Adiciona cada contato como uma nova linha no DataGridView
             foreach (var contato in listaContatos)
             {
-                // Adicionar apenas os detalhes do contato
-                string contatoFormatado = string.Format("{0,-20} | {1,-15} | {2,-30} | {3,-50}",
-                                                        contato.Nome, contato.Telefone, contato.Email, contato.Morada);
-                lista_info.Items.Add(contatoFormatado);
+                grelhaInfo.Rows.Add(contato.Nome, contato.Telefone, contato.Email, contato.Morada);
             }
         }
 
 
         private void LimparTextBox()
         {
-
+            txtNome.Clear();
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtMorada.Clear();
         }
 
         
@@ -95,6 +99,11 @@ namespace ListaTelefonica
         private void btn_Sair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void grelhaInfo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
