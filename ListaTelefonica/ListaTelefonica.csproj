@@ -146,5 +146,11 @@
   <ItemGroup>
     <None Include="Resources\noun-update-370571-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun-edit-6687661-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noun-update-370571-removebg-preview1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

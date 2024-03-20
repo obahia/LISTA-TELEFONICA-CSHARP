@@ -113,6 +113,16 @@ namespace ListaTelefonica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noun_edit_6687661_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("noun-edit-6687661-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap noun_save_1152048 {
             get {
                 object obj = ResourceManager.GetObject("noun-save-1152048", resourceCulture);
@@ -206,6 +216,16 @@ namespace ListaTelefonica.Properties {
         internal static System.Drawing.Bitmap noun_update_370571_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("noun-update-370571-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noun_update_370571_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("noun-update-370571-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

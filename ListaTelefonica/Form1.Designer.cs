@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lista_info = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Info_Nome = new System.Windows.Forms.TextBox();
-            this.Info_Contato = new System.Windows.Forms.TextBox();
-            this.Info_Email = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Info_Endereco = new System.Windows.Forms.TextBox();
+            this.txtMorada = new System.Windows.Forms.TextBox();
             this.btn_Sair = new System.Windows.Forms.Button();
             this.btn_Deletar = new System.Windows.Forms.Button();
             this.btn_Atualizar = new System.Windows.Forms.Button();
@@ -64,26 +64,26 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Lista Telefónica";
             // 
-            // Info_Nome
+            // txtNome
             // 
-            this.Info_Nome.Location = new System.Drawing.Point(129, 68);
-            this.Info_Nome.Name = "Info_Nome";
-            this.Info_Nome.Size = new System.Drawing.Size(176, 20);
-            this.Info_Nome.TabIndex = 3;
+            this.txtNome.Location = new System.Drawing.Point(129, 68);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(176, 20);
+            this.txtNome.TabIndex = 3;
             // 
-            // Info_Contato
+            // txtTelefone
             // 
-            this.Info_Contato.Location = new System.Drawing.Point(129, 109);
-            this.Info_Contato.Name = "Info_Contato";
-            this.Info_Contato.Size = new System.Drawing.Size(176, 20);
-            this.Info_Contato.TabIndex = 4;
+            this.txtTelefone.Location = new System.Drawing.Point(129, 109);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(176, 20);
+            this.txtTelefone.TabIndex = 4;
             // 
-            // Info_Email
+            // txtEmail
             // 
-            this.Info_Email.Location = new System.Drawing.Point(129, 147);
-            this.Info_Email.Name = "Info_Email";
-            this.Info_Email.Size = new System.Drawing.Size(176, 20);
-            this.Info_Email.TabIndex = 5;
+            this.txtEmail.Location = new System.Drawing.Point(129, 147);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(176, 20);
+            this.txtEmail.TabIndex = 5;
             // 
             // label2
             // 
@@ -129,12 +129,12 @@
             this.label5.Text = "Endereço";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Info_Endereco
+            // txtMorada
             // 
-            this.Info_Endereco.Location = new System.Drawing.Point(129, 186);
-            this.Info_Endereco.Name = "Info_Endereco";
-            this.Info_Endereco.Size = new System.Drawing.Size(176, 20);
-            this.Info_Endereco.TabIndex = 9;
+            this.txtMorada.Location = new System.Drawing.Point(129, 186);
+            this.txtMorada.Name = "txtMorada";
+            this.txtMorada.Size = new System.Drawing.Size(176, 20);
+            this.txtMorada.TabIndex = 9;
             // 
             // btn_Sair
             // 
@@ -146,6 +146,7 @@
             this.btn_Sair.Size = new System.Drawing.Size(65, 65);
             this.btn_Sair.TabIndex = 15;
             this.btn_Sair.UseVisualStyleBackColor = true;
+            this.btn_Sair.Click += new System.EventHandler(this.btn_Sair_Click);
             // 
             // btn_Deletar
             // 
@@ -162,7 +163,7 @@
             // 
             this.btn_Atualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Atualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Atualizar.Image = global::ListaTelefonica.Properties.Resources.noun_update_370571_removebg_preview;
+            this.btn_Atualizar.Image = global::ListaTelefonica.Properties.Resources.noun_update_370571_removebg_preview1;
             this.btn_Atualizar.Location = new System.Drawing.Point(519, 216);
             this.btn_Atualizar.Name = "btn_Atualizar";
             this.btn_Atualizar.Size = new System.Drawing.Size(65, 65);
@@ -190,6 +191,7 @@
             this.btn_Novo.Size = new System.Drawing.Size(65, 65);
             this.btn_Novo.TabIndex = 11;
             this.btn_Novo.UseVisualStyleBackColor = true;
+            this.btn_Novo.Click += new System.EventHandler(this.btn_Novo_Click);
             // 
             // Form1
             // 
@@ -202,13 +204,13 @@
             this.Controls.Add(this.btn_Salvar);
             this.Controls.Add(this.btn_Novo);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.Info_Endereco);
+            this.Controls.Add(this.txtMorada);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Info_Email);
-            this.Controls.Add(this.Info_Contato);
-            this.Controls.Add(this.Info_Nome);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lista_info);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -223,14 +225,14 @@
         #endregion
         private System.Windows.Forms.ListBox lista_info;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Info_Nome;
-        private System.Windows.Forms.TextBox Info_Contato;
-        private System.Windows.Forms.TextBox Info_Email;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Info_Endereco;
+        private System.Windows.Forms.TextBox txtMorada;
         private System.Windows.Forms.Button btn_Novo;
         private System.Windows.Forms.Button btn_Salvar;
         private System.Windows.Forms.Button btn_Atualizar;
