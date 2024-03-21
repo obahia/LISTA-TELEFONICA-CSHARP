@@ -123,6 +123,16 @@ namespace ListaTelefonica.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noun_magnifying_glass_1142952_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("noun-magnifying-glass-1142952-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap noun_save_1152048 {
             get {
                 object obj = ResourceManager.GetObject("noun-save-1152048", resourceCulture);
